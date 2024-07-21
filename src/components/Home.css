@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;800&display=swap');
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 60px 80px;
+  isolation: isolate;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 104px;
+  background: #f8f8f8;
+}
+
+/* Container */
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  width: auto;
+  height: 596px;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0;
+  gap: 48px;
+  margin: 0 auto;
+  width: 600px;
+  height: 376px;
+}
+
+.frame-47 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 32px;
+  width: 600px;
+  height: 336px;
+}
+
+.frame-46 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 20px;
+  width: 600px;
+  height: 208px;
+}
+
+.frame-43, .frame-44, .frame-45 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  gap: 16px;
+}
+
+.hello, .based-in {
+  width: auto;
+  height: 56px;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.name, .role, .location {
+  width: auto;
+  height: 56px;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.outlined-role {
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: white;
+  text-shadow: 
+    2px 2px 0 #000, 
+    -2px -2px 0 #000, 
+    2px -2px 0 #000, 
+    -2px 2px 0 #000;
+}
+
+.bio {
+  width: 600px;
+  height: 96px;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #71717A;
+}
+
+/* Social Buttons */
+.social-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px 0;
+  gap: 32px;
+  position: absolute;
+  width: 320px;
+  height: 64px;
+  left: 112px;
+  top: 620px;
+}
+
+.home-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+  width: 56px;
+  height: 56px;
+  background: #000000;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+
+.home-button .social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.home-page-figure img {
+  max-width: 100%;
+  height: auto;
+}

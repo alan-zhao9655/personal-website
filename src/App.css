@@ -1,0 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add some padding to the top of sections if needed to avoid content being hidden behind a fixed header */
+section {
+  padding-top: 60px;
+  margin-top: -60px;
+}
