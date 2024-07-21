@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;800&display=swap');
+
+.about-section {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #000;
+  text-align: center;
+  width: 100%;
+}
+
+.about-grid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-item h3 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.about-item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #71717A;
+}
+
+.highlight {
+  color: #FF6B6B;
+  font-weight: 800;
+}
+
+.about-me-figure {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
