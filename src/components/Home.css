@@ -30,7 +30,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 0 0 128px;
   width: auto;
   height: 596px;
 }
@@ -133,7 +133,6 @@ body {
   position: absolute;
   width: 320px;
   height: 64px;
-  left: 112px;
   top: 620px;
 }
 
@@ -157,6 +156,6 @@ body {
 }
 
 .home-page-figure img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 }
