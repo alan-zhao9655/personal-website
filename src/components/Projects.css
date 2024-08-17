@@ -1,0 +1,125 @@
+/* Project Section */
+.project-section {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 60px 80px;
+  width: 100%;
+  background: #000000;
+}
+
+/* Container */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 32px;
+  gap: 20px;
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* Heading */
+.project-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.my {
+  font-family: 'Sora';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.projects {
+  font-family: 'Sora';
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+/* Project Item */
+.project-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 40px;
+  width: 100%;
+  max-width: 1216px;
+}
+
+/* Image Container */
+.project-image-container {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  width: 50%;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 18.7611px;
+  box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12), 0px 12px 42px -4px rgba(24, 39, 75, 0.12);
+}
+
+/* Details */
+.project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 50%;
+}
+
+/* Project Number */
+.project-number {
+  font-family: 'Sora';
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+
+/* Project Title */
+.project-title {
+  font-family: 'Sora';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+/* Project Description */
+.project-description {
+  font-family: 'Sora';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #71717A;
+  max-width: 100%;
+}
+
+/* Adjust image alignment */
+.project-item:nth-child(even) .project-details {
+  order: 1;
+}
+
+.project-item:nth-child(even) .project-image-container {
+  order: 2;
+}

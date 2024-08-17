@@ -1,10 +1,6 @@
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     text-decoration: none;
-    color: inherit;
   }
   
   /* Header */
@@ -24,7 +20,7 @@ body, h1, h2, h3, p, ul, li, a {
     align-items: center;
     padding: 0 32px;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
   }
   
@@ -57,7 +53,6 @@ body, h1, h2, h3, p, ul, li, a {
     justify-content: center;
     align-items: center;
     gap: 32px;
-    width: 500px;
     height: 24px;
   }
   
@@ -76,7 +71,7 @@ body, h1, h2, h3, p, ul, li, a {
   }
   
   /* Button */
-  .button {
+  /* .button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +80,7 @@ body, h1, h2, h3, p, ul, li, a {
     width: 153px;
     background: #000000;
     border-radius: 4px;
-  }
+  } */
   
   .resume {
     font-family: 'Sora', sans-serif;
@@ -96,14 +91,30 @@ body, h1, h2, h3, p, ul, li, a {
   }
   
   .download {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #FFFFFF;
-    display: flex;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
     border-radius: 50%;
-    padding: 4px;
   }
   
+  /* Header.css */
+
+.resume-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  gap: 8px;
+}
+
+.resume-link:hover {
+  background-color: #333;
+}
+
+.download-icon {
+  margin-left: 8px;
+}

@@ -1,0 +1,132 @@
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 100px;
+  background: #000000;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 32px;
+  gap: 20px;
+  width: 90%; /* Make container responsive */
+  max-width: 1280px; /* Set a max width for large screens */
+  height: auto;
+}
+
+.testimonial-title-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 16px;
+  width: 100%; /* Full width */
+  height: auto; /* Adjust height based on content */
+}
+
+.testimonial-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  text-align: center; /* Center-align the text */
+}
+
+.experience-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 24px;
+  gap: 32px;
+  width: 100%; /* Full width */
+  height: auto; /* Adjust height based on content */
+}
+
+.experience-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 24px;
+  gap: 28px;
+  width: 100%; /* Full width */
+  max-width: 1168px; /* Limit max width */
+  background: #27272A;
+  border: 1px solid #71717A;
+  border-radius: 10px;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center; /* Align items vertically center */
+  justify-content: space-between; /* Align items from the start horizontally */
+  padding: 10px 0; /* Optional: add padding for overall spacing */
+}
+
+.experience-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin-right: auto;
+}
+
+.experience-date {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #D4D4D8;
+}
+
+.experience-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #D4D4D8;
+}
+
+/* Icons */
+.soti-company-icon img {
+  width: 60px;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.techX-company-icon img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .testimonial-section {
+    padding: 40px 20px;
+  }
+
+  .testimonial-container {
+    padding: 0px 16px;
+  }
+
+  .testimonial-title-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-card {
+    padding: 20px 16px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

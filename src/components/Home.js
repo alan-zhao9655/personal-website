@@ -1,7 +1,8 @@
 import React from 'react';
 import './Home.css';
-import figure from '../assets/home_page_figure.png';
-import { FaTwitter, FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
+import figure from '../assets/home.png';
+import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
+import { SiWechat } from 'react-icons/si';
 
 const Home = () => {
     return (
@@ -29,18 +30,18 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="social-buttons">
-                    <div className="home-button">
-                        <FaTwitter className="social-icon" />
-                    </div>
-                    <div className="home-button">
+                    <a href="https://web.wechat.com/uklccp?lang=en_US&t=v2/index" target="_blank" rel="noopener noreferrer" className="home-button">
+                        <SiWechat className="social-icon" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/alan-haoran-zhao/" target="_blank" rel="noopener noreferrer" className="home-button">
                         <FaLinkedin className="social-icon" />
-                    </div>
-                    <div className="home-button">
+                    </a>
+                    <a href="https://github.com/alan-zhao9655" target="_blank" rel="noopener noreferrer" className="home-button">
                         <FaGithub className="social-icon" />
-                    </div>
-                    <div className="home-button">
+                    </a>
+                    <a href="https://facebook.com/your-facebook-handle" target="_blank" rel="noopener noreferrer" className="home-button">
                         <FaFacebook className="social-icon" />
-                    </div>
+                    </a>
                 </div>
             </div>
             <div className='home-page-figure'>

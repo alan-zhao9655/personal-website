@@ -1,14 +1,19 @@
-// src/components/Contact.js
-import React from "react";
+import React from 'react';
 import './Contact.css';
 
-function Contact() {
-  return (
-    <div className="contact">
-      <h2>Contact Me</h2>
-      <p>If you wish to reach out to me, you can send me an email at <a href="mailto:haoran.zhao@mail.utoronto.ca">haoran.zhao@mail.utoronto.ca</a>.</p>
-    </div>
-  );
+const Contact = () => {
+    return (
+        <div className="contact-section">
+            <div className="contact-container">
+                <h2 className="contact-heading">Contact Me</h2>
+                <div className="contact-info">
+                    Feel free to reach out to me via email or phone.
+                </div>
+                <a href="mailto:haoran.zhao@mail.utoronto.ca" className="contact-email">haoran.zhao@mail.utoronto.ca</a>
+                <div className="contact-phone">(778) 320-5283</div>
+            </div>
+        </div>
+    );
 }
 
 export default Contact;
