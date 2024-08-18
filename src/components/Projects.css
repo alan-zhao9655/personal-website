@@ -123,3 +123,16 @@
 .project-item:nth-child(even) .project-image-container {
   order: 2;
 }
+
+/* Footnote */
+.footnote {
+  margin-top: 40px; /* Space it nicely from the content above */
+  text-align: center;
+  font-size: 12px;
+  color: #71717A; /* A subtle gray color to make it less prominent */
+}
+
+.footnote p {
+  margin: 0; /* Remove any default margin */
+  font-style: italic; /* Optional: italicize the text to give it a 'footnote' feel */
+}

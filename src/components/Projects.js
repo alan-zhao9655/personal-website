@@ -1,8 +1,8 @@
 import React from 'react';
 import './Projects.css';
 import project1Image from '../assets/transformer.png'; // Replace with your actual image paths
-import project2Image from '../assets/hero-image.jpg';
-import project3Image from '../assets/hero-image.jpg';
+import project2Image from '../assets/proejct2.png';
+import project3Image from '../assets/project3.png';
 
 const Projects = () => {
     return (
@@ -58,8 +58,11 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
+            <div class="footnote">
+                <p>Project images were created using DALL·E, and text generation assistance provided by ChatGPT.</p>
+            </div>
+
         </section>
     );
 }
