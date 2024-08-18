@@ -5,6 +5,9 @@ const PORT = process.env.PORT || 3000;
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'build')));
+app.use('/css', express.static(path.join(__dirname, 'build/css')));
+app.use('/js', express.static(path.join(__dirname, 'build/js')));
+app.use('/img', express.static(path.join(__dirname, 'build/img')));
 
 // Handles any requests that don't match the ones above
 app.get('*', (req, res) => {
