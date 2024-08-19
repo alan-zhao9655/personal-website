@@ -1,8 +1,7 @@
 import React from 'react';
 import './Home.css';
 import figure from '../assets/home.png';
-import { FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
-import { SiWechat } from 'react-icons/si';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Home = () => {
     return (
@@ -25,23 +24,23 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="bio">
-                            I’m Haoran Zhao, a Software Engineer based in Canada. I have a passion for creating clean and modern interfaces.
+                            I’m Haoran Zhao, a Machine Learning Engineer based in Canada. I'm passionate about crafting innovative software solutions and advancing the boundaries of machine learning to create impactful, intelligent applications.
                         </div>
                     </div>
                 </div>
                 <div className="social-buttons">
-                    <a href="https://web.wechat.com/uklccp?lang=en_US&t=v2/index" target="_blank" rel="noopener noreferrer" className="home-button">
+                    {/* <a href="https://web.wechat.com/uklccp?lang=en_US&t=v2/index" target="_blank" rel="noopener noreferrer" className="home-button">
                         <SiWechat className="social-icon" />
-                    </a>
+                    </a> */}
                     <a href="https://www.linkedin.com/in/alan-haoran-zhao/" target="_blank" rel="noopener noreferrer" className="home-button">
                         <FaLinkedin className="social-icon" />
                     </a>
                     <a href="https://github.com/alan-zhao9655" target="_blank" rel="noopener noreferrer" className="home-button">
                         <FaGithub className="social-icon" />
                     </a>
-                    <a href="https://facebook.com/your-facebook-handle" target="_blank" rel="noopener noreferrer" className="home-button">
+                    {/* <a href="https://facebook.com/your-facebook-handle" target="_blank" rel="noopener noreferrer" className="home-button">
                         <FaFacebook className="social-icon" />
-                    </a>
+                    </a> */}
                 </div>
             </div>
             <div className='home-page-figure'>
