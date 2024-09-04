@@ -19,7 +19,7 @@ const Header = () => {
                     <div className="nav-item"><a href="#contact">Contact Me</a></div>
                 </nav>
                 <a 
-                    href="https://acrobat.adobe.com/id/urn:aaid:sc:US:c056dc71-e5f6-4a22-ad08-827ae2ee8d2c"
+                    href="https://acrobat.adobe.com/id/urn:aaid:sc:US:1333bdaa-6a54-4557-aa60-f542989d1377"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="resume-link"
