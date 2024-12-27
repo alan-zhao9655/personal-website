@@ -1,8 +1,9 @@
 import React from 'react';
 import './Projects.css';
-import project1Image from '../assets/transformer.png'; // Replace with your actual image paths
+import project1Image from '../assets/transformer.png';
 import project2Image from '../assets/proejct2.png';
 import project3Image from '../assets/project3.png';
+import project4Image from '../assets/project4.png';
 
 const Projects = () => {
     return (
@@ -15,10 +16,51 @@ const Projects = () => {
 
                 <div className="project-item">
                     <div className="project-image-container">
-                        <img src={project1Image} alt="Neural Machine Translation Project" className="project-image" />
+                    <a href="https://drive.google.com/file/d/1qkx1k3bvmkT5pPTfWU1eTt_FCMpXC7So/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <img
+                            src={project4Image}
+                            alt="RAG-based Course Recommendation Project"
+                            className="project-image"
+                        />
+                    </a>
                     </div>
                     <div className="project-details">
                         <div className="project-number">01</div>
+                        <div className="project-title">
+                        RAG-based Course Recommendation Engineer (Natural Language Processing)
+                        </div>
+                        <div className="project-description">
+                        <p>
+                            <strong>
+                            • Developed a multi-turn Retrieval-Augmented Generation (RAG) pipeline
+                            </strong>{' '}
+                            to recommend University of Toronto courses, integrating Pinecone for
+                            vector similarity search and GPT-4 for conversational queries.
+                        </p>
+                        <p>
+                            <strong>
+                            • Processed and encoded 7,800+ course entries from official UofT
+                            datasets
+                            </strong>
+                            , achieving 84% Mean Average Precision, 100% Factual Accuracy, and a
+                            Satisfaction score of 8.2 in user evaluations.
+                        </p>
+                        <p>
+                            <strong>• Engineered a multi-agent architecture</strong> (query
+                            understanding, retrieval, response generation) to minimize
+                            hallucinations, reduce token waste, and improve recommendation
+                            diversity.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+
+                <div className="project-item">
+                    <div className="project-image-container">
+                        <img src={project1Image} alt="Neural Machine Translation Project" className="project-image" />
+                    </div>
+                    <div className="project-details">
+                        <div className="project-number">02</div>
                         <div className="project-title">Neural Machine Translation Engineer (Natural Language Processing)</div>
                         <div className="project-description">
                             <p><strong>• Engineered and trained a Transformer model</strong> from scratch to perform English-French translation tasks utilizing Canadian Hansards dataset for training and validation.</p>
@@ -34,7 +76,7 @@ const Projects = () => {
                         <img src={project2Image} alt="Word Sense Disambiguation Project" className="project-image" />
                     </div>
                     <div className="project-details">
-                        <div className="project-number">02</div>
+                        <div className="project-number">03</div>
                         <div className="project-title">Word Sense Disambiguation & Lexical Database Integration (Natural Language Processing)</div>
                         <div className="project-description">
                             <p><strong>• Implemented the basic Lesk Algorithm</strong> with an accuracy for Word Sense Disambiguation (WSD) 39.6%. Improved the Lesk Algorithm by integrating one-sided Cosine Similarity to achieve an accuracy of 43.9%.</p>
@@ -50,7 +92,7 @@ const Projects = () => {
                         <img src={project3Image} alt="Machine Learning in Online Education Project" className="project-image" />
                     </div>
                     <div className="project-details">
-                        <div className="project-number">03</div>
+                        <div className="project-number">04</div>
                         <div className="project-title">Machine Learning in Online Education (Machine Learning)</div>
                         <div className="project-description">
                             <p><strong>• Implemented diverse machine learning methods</strong> like k-NN, Item Response Theory, Matrix Factorization, Autoencoder Neural Networks, and Ensemble Methods to accurately predict student correctness on diagnostic questions.</p>
