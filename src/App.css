@@ -1,16 +1,139 @@
-html {
-  scroll-behavior: smooth;
-}
-
-/* Add some padding to the top of sections if needed to avoid content being hidden behind a fixed header */
-section {
-  padding-top: 60px;
-  margin-top: -60px;
-}
-
-/* Ensure global styles don't conflict */
-body, html {
+/* Global Styles */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Sora', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+/* Prevent horizontal scroll */
+.App {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Section Spacing */
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Typography Base */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+p {
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Lists */
+ul, ol {
+  list-style-position: inside;
+}
+
+/* Smooth Transitions */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Accessibility - Focus Styles */
+*:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive Padding Utility */
+.section-padding {
+  padding: 60px 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section-padding {
+    padding: 50px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-padding {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-padding {
+    padding: 30px 15px;
+  }
+}
+
+/* Prevent body scroll when mobile menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Loading State */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Error State */
+.error {
+  text-align: center;
+  padding: 40px 20px;
+  color: #dc3545;
+}
+
+/* Print Styles */
+@media print {
+  .header,
+  .footer,
+  .scrollToTopBtn,
+  .hamburger {
+    display: none !important;
+  }
+  
+  section {
+    page-break-inside: avoid;
+  }
 }

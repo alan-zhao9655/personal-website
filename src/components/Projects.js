@@ -1,8 +1,8 @@
 import React from 'react';
 import './Projects.css';
-import project1Image from '../assets/transformer.png';
-import project2Image from '../assets/proejct2.png';
-import project3Image from '../assets/project3.png';
+import project1Image from '../assets/machine_translation.png';
+import project2Image from '../assets/word_sense_disambiguation.png';
+import project3Image from '../assets/online_edu_ml.png';
 import project4Image from '../assets/project4.png';
 
 const Projects = () => {
@@ -102,7 +102,7 @@ const Projects = () => {
                 </div>
             </div>
             <div class="footnote">
-                <p>Project images were created using DALL·E, and text generation assistance provided by ChatGPT.</p>
+                <p>Project images were created using Google Gemini.</p>
             </div>
 
         </section>

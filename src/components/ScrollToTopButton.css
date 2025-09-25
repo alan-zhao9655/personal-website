@@ -1,4 +1,4 @@
-/* src/components/ScrollToTopButton.css */
+/* ScrollToTopButton.css */
 
 .scrollToTopBtn {
     position: fixed;
@@ -15,15 +15,63 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease, opacity 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .scrollToTopBtn:hover {
     background-color: #444;
+    transform: scale(1.1);
 }
 
 .scrollToTopBtn svg {
     width: 20px;
     height: 20px;
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .scrollToTopBtn {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .scrollToTopBtn svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .scrollToTopBtn {
+        top: 15px;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .scrollToTopBtn svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .scrollToTopBtn {
+        top: 10px;
+        left: 10px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .scrollToTopBtn svg {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .scrollToTopBtn:hover {
+        transform: scale(1.05);
+    }
 }

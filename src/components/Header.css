@@ -1,120 +1,233 @@
 /* Reset some default styles */
 body, h1, h2, h3, p, ul, li, a {
     text-decoration: none;
-  }
-  
-  /* Header */
-  .header {
+}
+
+/* Header */
+.header {
     display: flex;
-    align-items: flex-start;
-    padding: 24px 80px;
+    align-items: center;
+    padding: 24px 40px;
     width: 100%;
-    height: 104px;
-    background: #f8f8f8;
-  }
-  
-  /* Container */
-  .container {
+    min-height: 80px;
+    background: #F5F5F5;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Added subtle shadow */
+}
+
+/* Container */
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 32px;
+    padding: 0 20px;
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
-  }
-  
-  /* Logo */
-  .logo {
+}
+
+/* Logo */
+.logo {
     display: flex;
     align-items: center;
     gap: 12px;
-    width: 140px;
-    height: 40px;
-  }
-  
-  .logo1 {
-    width: 70px;
-    height: 50px;
-  }
-  
-  .logo-text {
+    flex-shrink: 0;
+}
+
+.logo1 {
+    width: 50px;
+    height: auto;
+    max-height: 50px;
+}
+
+.logo-text {
     font-family: 'Sora', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.02em;
-    color: #000000;
-  }
-  
-  /* Taskbar */
-  .taskbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    height: 24px;
-  }
-  
-  .nav-item {
-    font-family: 'Sora', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    color: #000000;
-  }
-  
-  .nav-item a {
-    text-transform: capitalize;
-    color: #000000;
-  }
-  
-  /* Button */
-  /* .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 20px;
-    gap: 8px;
-    width: 153px;
-    background: #000000;
-    border-radius: 4px;
-  } */
-  
-  .resume {
-    font-family: 'Sora', sans-serif;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-  }
-  
-  .download {
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
-    border-radius: 50%;
-  }
-  
-  /* Header.css */
+    color: #333333;
+}
 
+/* Taskbar */
+.taskbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #333333;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.nav-item a {
+    text-transform: capitalize;
+    color: #333333;
+    transition: color 0.3s;
+}
+
+.nav-item a:hover {
+    color: #00CEC9;
+    transform: translateY(-2px);
+}
+
+/* Resume Link */
 .resume-link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  background-color: #000;
-  color: #fff;
-  border-radius: 4px;
-  text-decoration: none;
-  gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: #FF6B6B;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    gap: 8px;
+    flex-shrink: 0;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .resume-link:hover {
-  background-color: #333;
+    background-color: #e55a5a;
+    transform: translateY(-2px);
+}
+
+.resume {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
 }
 
 .download-icon {
-  margin-left: 8px;
+    font-size: 14px;
+}
+
+/* Hamburger Menu (hidden by default) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333333;
+    transition: all 0.3s;
+}
+
+/* Mobile Menu Overlay */
+@media screen and (max-width: 768px) {
+    .taskbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: #F5F5F5;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 80px 30px 30px;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+    
+    .taskbar.active {
+        right: 0;
+    }
+    
+    .nav-item {
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .nav-item a {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 20px 30px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nav-item {
+        font-size: 15px;
+    }
+    
+    .taskbar {
+        gap: 20px;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .logo1 {
+        width: 40px;
+    }
+    
+    .logo-text {
+        font-size: 16px;
+    }
+    
+    .resume-link {
+        padding: 8px 12px;
+    }
+    
+    .resume {
+        font-size: 12px;
+    }
+    
+    /* Show hamburger menu on mobile */
+    .hamburger {
+        display: flex;
+        order: 2;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 12px 15px;
+    }
+    
+    .logo {
+        gap: 8px;
+    }
+    
+    .resume-link {
+        padding: 6px 10px;
+    }
 }
